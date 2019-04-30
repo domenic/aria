@@ -11091,6 +11091,7 @@
 			<pdef>aria-textseparation</pdef>
 			<div class="property-description">
 				<p>Defines how text content of a <rref>generic</rref> <a>element</a> is separated from text content of adjacent <code>generic</code> elements.</p>
+				<p>Specifically, <pref>aria-textseparation</pref> only applies to text nodes at the boundaries of a generic; it has no effect on separation between text nodes inside the generic, or on other types of elements.</p>
 		        <p>The value of the <pref>aria-textseparation</pref> <a>property</a> is a <a href="#valuetype_token_list">token list</a> of size 1 or 2. The first value represents the type of text separation before the element, and the second value represents the type of text separation after the element. If a single value is given, it represents the type of text separation before and after the element. Any value not recognized in the list of allowed tokens SHOULD be treated by <a>assistive technologies</a> as if the default value <code>style</code> had been provided. If the attribute is not present or its value is an empty string or <code>undefined</code>, the default value of <code>style</code> applies.</p>
 		        <p>For example, if the <code>badge</code> class in the following markup renders a circle around the "12" so that it is visually separated from the word "Notifications", then <code>aria-textseparation="style space"</code> ensures that AT render a space between the spans.</p>
 		        <pre class="example highlight">
